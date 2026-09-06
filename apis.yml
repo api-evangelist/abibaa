@@ -1,17 +1,34 @@
 aid: abibaa
 name: Abibaa
-description: 'Abibaa is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Abibaa was a global online B2B/B2C/C2C e-marketplace headquartered in
+  North Brunswick, New Jersey, founded around 2011-2012 and led by Benjamin Koufie
+  Akomeah, built to help small and medium-sized businesses trade across borders through
+  a multi-language buyer-and-seller marketplace. It was surfaced through the API Evangelist
+  harvest backlog from a secondary-market (EquityZen) pre-IPO listing. As of the 2026-09-06
+  enrichment pass the company has no live web presence: abibaa.com is registered to
+  the domain reseller TurnCommerce/NameBright and serves a HugeDomains "this domain
+  is for sale" page, the Internet Archive holds no capture of a working site after
+  March 2022, and no alternate company domain resolves. No API, developer program,
+  documentation or machine-readable contract of any kind was found.'
 url: https://raw.githubusercontent.com/api-evangelist/abibaa/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
+x-harvest-source-url: https://equityzen.com/company/abibaa
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
+x-status: defunct
+x-status-detail: Wound down; no first-party site resolves.
 created: '2026-09-06'
 modified: '2026-09-06'
 tags:
 - Company
+- Marketplace
+- E-Commerce
+- B2B
+- Cross-Border Trade
+- Small Business
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,29 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
-- type: Website
-  url: https://equityzen.com/company/abibaa
+- type: LinkedIn
+  url: https://www.linkedin.com/company/abibaa
+x-enrichment:
+  date: '2026-09-06'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: Abibaa's own domain abibaa.com no longer belongs to the company — it is registered
+    to the reseller TurnCommerce/NameBright and every path, including /openapi.json
+    and every /.well-known/ document, returns the same HugeDomains "for sale" HTML
+    page, with no Internet Archive capture of a working site after March 2022.
+  evidence:
+  - url: https://abibaa.com/
+    status: 200
+  - url: https://abibaa.com/openapi.json
+    status: 200
+  - url: https://abibaa.com/.well-known/agent-card.json
+    status: 200
+  - url: https://equityzen.com/company/abibaa
+    status: 200
+  - url: https://www.linkedin.com/company/abibaa
+    status: 200
+  checked: '2026-09-06'
