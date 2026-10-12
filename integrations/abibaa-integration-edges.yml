@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/abibaa/integrations
+- https://n8n.io/integrations/abibaa/
+- https://composio.dev/toolkits/abibaa
+- https://monid.ai/tools/abibaa
+checked:
+- https://composio.dev/toolkits/abibaa
+- https://monid.ai/tools/abibaa
+- https://n8n.io/integrations/abibaa/
+- https://zapier.com/apps/abibaa/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
